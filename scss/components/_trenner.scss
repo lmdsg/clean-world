@@ -1,0 +1,85 @@
+//main: ../index.scss
+
+.trenner {
+  width: 100%;
+  color: $color-primary;
+  height: 30px;
+  margin: 40px 0;
+
+  svg, &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:before {
+    transform-origin: center;
+    width: 100%;
+    max-width: 450px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.1);
+  }
+  svg {
+    width: 90px;
+    background-color: #fff;
+    padding: 0 8px;
+    circle {
+      fill: $color-primary-light;
+
+      transform-origin: left;
+      transition: 0.3s ease;
+      &:nth-of-type(1) {
+        fill: $color-accent;
+        transform-origin: center;
+      }
+      &:nth-of-type(2) {
+        transform-origin: right;
+      }
+    }
+  }
+  &:hover {
+    svg {
+      circle {
+        transform: scale(0.9);
+        fill: rgba(0,0,0,0.1);
+
+        &:nth-of-type(1) {
+          transform: scale(1.1);
+        }
+      }
+    }
+    &:before {
+      transform: translate(-50%, -50%) scaleX(0.65);
+    }
+  }
+
+
+  &-top:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    height: 8px;
+    width: 40px;
+    background-color: $color-accent;
+    left: calc(50% - 20px);
+  }
+  &-bottom {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      height: 8px;
+      width: 40px;
+      background-color: $color-accent;
+      left: calc(50% - 20px);
+    }
+  }
+}
+
+
+.white .trenner-top:before {
+  background-color: #fff;
+}

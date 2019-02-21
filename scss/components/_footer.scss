@@ -1,0 +1,93 @@
+//main: ../index.scss
+
+footer {
+  color: $font-color-primary;
+  li a {
+    color: rgba(0,0,0,0.75);
+  }
+
+  .logo {
+    // max-width: 400px;
+    width: 100%;
+    margin-bottom: 2rem;
+    path {
+      fill: #fff;
+    }
+  }
+
+  .heading-fancy {
+    margin-top: 0;
+  }
+
+  .list-boxed {
+    margin-top: 45px;
+  }
+
+  .copyright-text {
+    border-top: 1px solid $color-secondary;
+  }
+
+  .mp {
+    padding: 1.5rem;
+  }
+
+  .loc-standort {
+    min-height: 180px;
+
+    .loc-title {
+      padding-top: 8px;
+      margin: 0;
+    }
+  }
+}
+
+
+.cta-newsletter {
+  padding: 2rem 0.9rem;
+  border-top: 2px solid $color-accent;
+
+  label {
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background-color: $color-accent;
+    width: 60px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    svg {
+      transition: 0.3s ease;
+      font-size: 1rem;
+      transform: translateX(-2px);
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      svg {
+        transform: translateX(0px) scale(1.2);
+      }
+    }
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+input.cta {
+  background-color: #fff;
+  font-size: 0.85rem;
+  padding: 10px 70px 10px 40px;
+  border-radius: 30px;
+  height: 60px;
+  min-width: 320px;
+  line-height: 37px;
+  transition: 0.3s ease;
+
+  &:focus {
+    background-color: rgba(255,255,255,0.9);
+  }
+}

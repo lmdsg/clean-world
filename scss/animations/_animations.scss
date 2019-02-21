@@ -1,0 +1,42 @@
+//main: ../index.scss
+// is-laoded class on the body to initiate instant page load transition-delay
+// after-loaded class on body to initiate any animations after instant load
+
+
+.main-up {
+  @include translateY(98%);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-up, .fade-up-after,   {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s,
+    opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+  @include translateY(200px);
+  opacity: 0;
+}
+.fade-left-after {
+  opacity: 0;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  @include translateX(100px);
+}
+
+.is-loaded {
+  .main-up, .fade-up {
+    @include translateY(0);
+  }
+  .fade-up {
+    opacity: 1;
+  }
+}
+.after-loaded {
+  .fade-up-after  {
+    @include translateY(0);
+  }
+  .fade-left-after {
+    @include translateX(0);
+  }
+  .fade-up-after, .fade-left-after  {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,29 @@
+//main: ../index.scss
+
+.fancy-corners {
+  $borderWidth: 4px;
+  margin: calc(20px + 3vw) ;
+  padding: 2rem;
+
+  &:before, &:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 0;
+    border-color: $color-tertiary;
+    border-style: solid;
+  }
+  &:before {
+    border-width: $borderWidth 0 0 $borderWidth;
+    top: -$borderWidth;
+    left: -$borderWidth;
+  }
+
+  &:after {
+    border-width: 0 $borderWidth $borderWidth 0;
+    bottom: -$borderWidth;
+    right: -$borderWidth;
+    border-color: $color-accent;
+  }
+}

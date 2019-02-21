@@ -1,0 +1,255 @@
+//main: ../index.scss
+
+form {
+  width: 100%;
+
+  &.form-small {
+    padding-top: 40px;
+  }
+
+  * {
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .form-section {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  h6 {
+    width: 100%;
+  }
+
+  label, input, input + label span, select {
+    @include transition();
+  }
+
+  textarea {
+    font-family: $font-primary;
+    resize: none;
+    max-height: 10rem;
+    line-height: 1.4;
+  }
+
+  label {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: $font-size;
+    margin-right: 12px;
+    margin-bottom: 8px;
+    padding-left: 0;
+    display: inline-block;
+    opacity: 0.8;
+    color: $font-color-primary;
+  }
+
+  input[type="text"], select, input[type="email"],
+  input[type="number"], input[type="tel"], textarea  {
+    background-color: transparent;
+    font-size: $font-size;
+    width: 100%;
+    padding: 8px 12px 6px 0;
+    border-bottom: 1px solid $color-secondary-dark;
+    color: $font-color-primary;
+    border-radius: 2px;
+    transition: 0.3s ease;
+
+    &:focus {
+      border-color: $color-primary-dark;
+    }
+  }
+  .input-container {
+    padding-top: 6px;
+
+    label {
+      transform-origin: left;
+      @include transition();
+      position: absolute;
+      top: 14px;
+      left: 0;
+      margin-bottom: 0;
+      z-index: 3;
+      cursor: text;
+      user-select: none;
+    }
+
+    &.focused {
+      label {
+        transform: translateY(-24px) scale(0.8);
+        color: $color-primary-dark;
+      }
+      input:not(.error), textarea:not(.error) {
+        border-color: transparent;
+      }
+    }
+  }
+
+  select {
+    width: auto;
+    margin: 0 6px 0 0;
+    &.full {
+      width: 100%;
+    }
+
+    option:disabled {
+      background-color: $color-primary;
+      color: white;
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    + label {
+      font-weight: 400;
+      font-size: $font-size;
+      cursor: pointer;
+      color: $font-color-primary;
+
+      span {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin: 4px 8px 8px 0;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid $font-color-primary;
+        background-position: center;
+        background-size: 120%;
+
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          path {
+            @include transition();
+            stroke-dasharray: 240;
+            stroke-dashoffset: 240;
+          }
+        }
+      }
+    }
+
+    &:checked {
+      + label {
+        color: $font-color-primary;
+        span {
+          &.no-svg {
+            background-image: url('../svg/tick.svg');
+          }
+
+          svg path {
+            stroke-dashoffset: 0;
+          }
+        }
+      }
+    }
+  }
+
+  input[type="radio"] + label span {
+    border-radius: 50%;
+  }
+
+  .error-message {
+    @include transition();
+    font-size: $font-size;
+    padding: 4px 0;
+    padding-right: 4px;
+    width: 100%;
+    color: $error;
+    animation: expand .5s ease-in-out;
+  }
+
+  label.datenschutz {
+    font-size: 0.6rem!important;
+  }
+
+
+  &.form-white {
+    input[type="text"], select, input[type="email"],
+    input[type="number"], input[type="tel"], textarea {
+      color: $color-tertiary;
+      border-bottom-color: $color-tertiary-dark;
+      &::placeholder {
+        color: $color-tertiary-light;
+      }
+
+      &:focus {
+        border-color: #fff;
+      }
+    }
+    .input-container {
+      &.focused {
+        label {
+          transform: translateY(-24px) scale(0.8);
+          color: $color-tertiary-dark;
+        }
+      }
+    }
+
+    label.datenschutz {
+      color: $color-tertiary;
+      font-size: 0.7rem!important;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+      &:checked + label{
+        color: $color-tertiary-dark;
+
+      }
+    }
+  }
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+  }
+
+}
+
+form.routenplaner {
+  input[type="text"] {
+    border: 2px solid $color-accent;
+    padding: 0.8rem 1.6rem;
+    background-color: $color-accent;
+    color: #fff;
+
+    &:focus {
+      color: $color-primary;
+      background-color: transparent;
+      border-color: $color-accent;
+    }
+  }
+  label {
+    opacity: 1;
+    color: #fff;
+    top: 20px;
+    left: 1.6rem;
+  }
+  .input-container.focused label {
+    color: $color-primary-dark;
+    transform: translate(-1.5rem,-42px) scale(0.8);
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+{
+  border-color: $color-primary;
+  -webkit-text-fill-color: $color-primary-dark;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  // transition: background-color 5000s ease-in-out 0s;
+}
+
+.grecaptcha-badge {
+  display: none;
+}

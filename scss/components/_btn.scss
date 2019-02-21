@@ -1,0 +1,33 @@
+//main: ../index.scss
+
+.btn {
+  @include transition();
+  @extend .uppercase;
+  $padding-tb: 8px;
+  display: inline-block;
+  padding: $padding-tb 30px;
+  color: #fff;
+  background-color: $ca-yellow;
+  border: 2px solid transparent;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $ca-yellow;
+    color: $ca-yellow;
+  }
+  &-white {
+    @extend .btn;
+    color: $color-primary;
+    background-color: #fff;
+
+    &:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+}

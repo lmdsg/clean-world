@@ -1,0 +1,135 @@
+// main: ../index.scss
+
+.primary {
+  color: $color-primary;
+}
+.primary-dark {
+  color: $color-primary-dark;
+}
+.primary-light {
+  color: $color-primary-light;
+}
+
+.secondary {
+  color: $color-secondary;
+}
+.secondary-dark {
+  color: $color-secondary-dark;
+}
+.secondary-light {
+  color: $color-secondary-light;
+}
+
+.tertiary {
+  color: $color-tertiary;
+}
+.tertiary-dark {
+  color: $color-tertiary-dark;
+}
+.tertiary-light {
+  color: $color-tertiary-light;
+}
+
+.bg-primary {
+  background-color: $color-primary;
+}
+.bg-primary-dark {
+  background-color: $color-primary-dark;
+}
+.bg-primary-light {
+  background-color: $color-primary-light;
+}
+
+.bg-secondary {
+  background-color: $color-secondary;
+}
+.bg-secondary-dark {
+  background-color: $color-secondary-dark;
+}
+.bg-secondary-light {
+  background-color: $color-secondary-light;
+}
+
+.bg-tertiary {
+  background-color: $color-tertiary;
+}
+.bg-tertiary-dark {
+  background-color: $color-tertiary-dark;
+}
+.bg-tertiary-light {
+  background-color: $color-tertiary-light;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.white {
+  color: #fff;
+
+  p, blockquote, li {
+    color: $color-secondary-light;
+  }
+}
+p, li, ul, span {
+  &.white {
+    color:  #fff;
+  }
+}
+.accent {
+  color: $color-accent;
+}
+.bg-accent {
+  background-color: $color-accent;
+}
+.standard {
+  color: $font-color-primary;
+}
+.bg-ca {
+  &-yellow {
+    background-color: $ca-yellow;
+  }
+  &-blue {
+    background-color: $ca-blue;
+  }
+  &-green {
+    background-color: $ca-green;
+  }
+  &-magenta {
+    background-color: $ca-magenta;
+  }
+}
+.ca {
+  &-yellow {
+    color: $ca-yellow;
+  }
+  &-blue {
+    color: $ca-blue;
+  }
+  &-green {
+    color: $ca-green;
+  }
+  &-magenta {
+    color: $ca-magenta;
+  }
+}
+
+
+
+.bg-half {
+  > div {
+    @include respond-to($medium) {
+      padding: calc(40px + 4vw);
+    };
+    @include respond-to($medium-large) {
+      padding: 0.9rem;
+      padding-top: 100px;
+      &:nth-of-type(1), &:nth-of-type(3)  {
+        padding-left: calc(40px + 4vw);
+      }
+      &:nth-of-type(3) {
+        padding-top: 0;
+      }
+    };
+  }
+}

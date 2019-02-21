@@ -1,0 +1,32 @@
+//main: ../index.scss
+
+.main-parallax {
+  padding-bottom: calc(40px + 2vw);
+
+  img {
+    width: calc(100% - 16px);
+    @include respond-to($medium) {
+      max-width: 650px;
+      width: 80%;
+      min-width: 500px;
+    }
+  }
+  &:before {
+    content: "";
+    background-color: $color-accent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 70%;
+    min-width: 380px;
+    background-image: url('../assets/svg/dot-triangle.svg');
+    background-repeat: no-repeat;
+    background-position: 94% 94%;
+    background-size: 50%;
+  }
+}
+
+.parallax-fix {
+  pointer-events: all!important
+}

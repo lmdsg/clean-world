@@ -1,0 +1,40 @@
+// main: ../index.scss
+.card {
+  @extend .shadow;
+  padding: 1rem;
+  position: relative;
+  background-color: #fff;
+  border-radius: .625rem;
+  box-shadow: 0px 3px 45px 0px rgba(197, 197, 197, 0.35);
+
+  &-primary {
+    @extend .card;
+    background-color: $color-primary;
+  }
+  &-secondary {
+    @extend .card;
+    background-color: $color-secondary;
+  }
+  &-tertiary {
+    @extend .card;
+    background-color: $color-tertiary;
+  }
+  &.mp {
+    padding: 2rem;
+  }
+
+  &-octagon {
+    padding: 32px 12px;
+    @include respond-to($medium) {
+      padding-left: calc(30px + 10%);
+    };
+    .card {
+    }
+    .octagon-img{
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: auto;
+    }
+  }
+}

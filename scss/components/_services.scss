@@ -1,0 +1,36 @@
+//main: ../index.scss
+
+.services-small {
+  text-align: center;
+  background: #ffffff;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 7px 5px 30px rgba(72,73,121,0.15);
+  transition: .4s;
+
+
+  .icon {
+    background: #f4f6fd;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    color: $ca-yellow;
+    line-height: 80px;
+    border-radius: 5px;
+    transition: .4s;
+    margin-bottom: 0.6rem;
+  }
+
+  &:hover {
+    background-color: $ca-yellow;
+    transform: translateY(-10px);
+
+    .icon {
+      border-radius: 50%;
+    }
+    h3, p, a {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1462.28 2325.2">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.3;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #abd8c8;
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_4);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="595.93" y1="202.8" x2="1209.17" y2="1267.74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b37cff"/>
+      <stop offset="1" stop-color="#f895e7"/>
+    </linearGradient>
+    <radialGradient id="Unbenannter_Verlauf_4" data-name="Unbenannter Verlauf 4" cx="2546.36" cy="1112.48" r="2468.58" gradientUnits="userSpaceOnUse">
+      <stop offset="0.28" stop-color="#570065"/>
+      <stop offset="1" stop-color="#3672e2"/>
+    </radialGradient>
+  </defs>
+  <title>bg-1</title>
+  <path class="cls-1" d="M444.52.15l69.42,0C471.5-.51,444.52.15,444.52.15Z" transform="translate(0 0.15)"/>
+  <path class="cls-2" d="M1462.28,97.57V-.15L513.94.13c150.62,2.26,485.31,28.21,522.13,118.22C1113.15,306.77,681,170.57,638,383.26c-27,133.65,64.09,185.57,47.38,297-14.57,97.1-104,72.83-181.87,178.68-54.45,74-56.26,149.4-270.58,192.71-50.1,10.12-155.25,24.89-165.67,28.44s-168.82,53,40.18,233S895,1390.29,932.29,1748.61c35.61,341.8,530,576.44,530,576.44V621.91c-27-39.3-43-69.94-40.81-112.43,10.47-206.41-154.54-184-162.29-297.65C1253.14,123.12,1375.6,94.71,1462.28,97.57Z" transform="translate(0 0.15)"/>
+  <path class="cls-3" d="M1462.28,51.58V-.15L375.51.13c143.64,2.26,655-11.81,688.13,144.27,30,141.13-319.78,54.64-387,206.72C567.77,597.44,971,642.85,699.36,769.94c-235.35,110.13-35,244.3-461,310.11h-.12s-244,40-35,220,648,36,755,380,504,600,504,600V664.92c-27.39-59.68-47.23-114.17-45.14-156.66,9.59-194.88-164.51-192.52-171.89-306.19C1239.48,113.36,1394.1,67.46,1462.28,51.58Z" transform="translate(0 0.15)"/>
+</svg>

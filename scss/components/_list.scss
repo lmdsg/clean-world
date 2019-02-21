@@ -1,0 +1,231 @@
+//main: ../index.scss
+
+.list {
+  padding-left: 20px;
+
+  li {
+    margin-bottom: 8px;
+    &::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      top: 10px;
+      left: -16px;
+      background-color: $color-accent;
+      border-radius: 50%;
+    }
+  }
+
+  &-square {
+    @extend .list;
+    li::before {
+      border-radius: 0;
+    }
+  }
+
+  &-dash {
+    @extend .list;
+    li:before {
+      height: 2px;
+      position: absolute;
+      top: 11px;
+      border-radius: 0;
+    }
+  }
+
+  &-material {
+    box-shadow: 0px 10px 54px 0px rgba(0,0,0,0.22);
+    ul li, h6 {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      min-height: 60px;
+      padding: 12px 0 12px 102px;
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-weight: 700;
+        min-width: 90px;
+        min-height: 60px;
+        height: 100%;
+        margin-right: 16px;
+      }
+    }
+    h6 {
+      overflow: hidden;
+      background-color: $color-accent;
+      font-weight: 400;
+      margin-bottom: 0;
+      z-index: 5;
+      padding-left: 60px;
+      &:first-child {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      span {
+        transition: 0.3s ease;
+        min-width: 60px;
+        margin: 0;
+        font-size: 40px;
+      }
+      &:hover span {
+        transform: scale(1.2);
+      }
+    }
+    ul li {
+      transition: 0.3s ease;
+      margin-bottom: 2px;
+      background-color: $color-primary-dark;
+      span {
+        border-right: 2px solid $color-primary-light;
+      }
+      &:hover {
+        background-color: $color-primary-light;
+      }
+      &:last-child {
+        // border-bottom-right-radius: 8px;
+        // border-bottom-left-radius: 8px;
+      }
+    }
+  }
+
+
+  &-new {
+    li {
+      max-width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 6px 0;
+      margin: 4px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+
+      svg {
+        margin-right: 8px;
+      }
+
+      span, a {
+        display: inline;
+        transition: 0.3s ease;
+      }
+      &:hover {
+        span, a, &:before  {
+          color: $color-accent;
+          transform: translateX(12px);
+        }
+      }
+    }
+    &.two-cols {
+      display: flex;
+      flex-flow: row wrap;
+      li {
+        width: calc(50% - 6px);
+        &:nth-of-type(odd) {
+          margin-right: 12px;
+        }
+        @media all and (max-width: 576px) {
+          width: 100%;
+        }
+      }
+    }
+    &.dark {
+      li {
+        border-color: transparent;
+      }
+    }
+  }
+
+
+  &-boxed {
+    $paddingLeft: 84px;
+    // padding-left: $paddingLeft;;
+
+    li {
+      transition: 0.3s ease;
+      // color: rgba(255,255,255, 0.8);
+      margin-bottom: 24px;
+      min-height: 55px;
+      .heading {
+        transition: 0.3s ease;
+        font-size: 0.9rem;
+      }
+      p, a {
+        color: rgba(0,0,0,0.75);
+        font-style: normal;
+        font-size: 0.95rem;
+      }
+
+      div.box {
+        transition: 0.3s ease 0.4s;
+        margin-bottom: 24px;
+        // position: absolute;
+        // left: -$paddingLeft;
+        // top: 0;
+        font-size: $font-size * 1.6;
+        font-weight: 800;
+        width: 65px;
+        height: 65px;
+        border-radius: 0;
+        background-color: $color-primary;
+        padding: 2px 8px;
+        color: #fff;
+
+        svg {
+          transition: 0.3s ease;
+          transform-origin: center bottom;
+        }
+      }
+
+      &[data-aos="animated"] {
+        opacity: 0;
+        transform: translateX(30px);
+        span.num {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+      }
+      &.animated {
+        opacity: 1;
+        transform: translatex(0);
+        span.num {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      &:hover {
+        div.box svg {
+          transform: scale(1.1);
+          color: $color-accent;
+        }
+        .heading {
+          color: $color-accent;
+        }
+      }
+    }
+
+    &.primary {
+      span.num {
+        background-color: $color-primary;
+        color: #fff
+      }
+      li {
+        color: $color-primary;
+      }
+    }
+  }
+}
+.white .list-boxed {
+  a,p {
+    color: $color-secondary;
+  }
+  div.box {
+    background-color: $color-accent;
+  }
+
+  li:hover {
+    div.box svg {
+      color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+//main: ../index.scss
+
+.fa-sparkle {
+  font-size: 2.8rem;
+  color: $ca-yellow;
+}
+
+.about-image {
+  .img {
+    box-shadow: 0px 10px 20px 0px rgba(130,136,147,0.25);
+    height: calc(5vw + 170px);
+    font-size: calc(4rem + 2vw);
+
+    img {
+      width: 50%;
+      max-width: 160px;
+    }
+    .h4 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  > div {
+
+    padding: 0.6rem;
+    $bRadius: 12px;
+    &:nth-of-type(1) .img{
+      border-top-left-radius: $bRadius;
+    }
+    &:nth-of-type(2) .img{
+      border-top-right-radius: $bRadius;
+    }
+    &:nth-of-type(3) .img{
+      border-bottom-left-radius: $bRadius;
+    }
+    &:nth-of-type(4) .img{
+      border-bottom-right-radius: $bRadius;
+    }
+  }
+}
+
+
+.circle-pattern-1 {
+  opacity: 1;
+  height: 39em;
+  position: absolute;
+  width: 42em;
+  bottom: -10px;
+  left: -10px;
+  background: #fff;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  -webkit-animation: movebounce 3s linear infinite;
+  animation: movebounce 3s linear infinite;
+}
+.circle-pattern-2 {
+  opacity: 1;
+  height: 39em;
+  position: absolute;
+  width: 50vw;
+  bottom: 15%;
+  left: 5%;
+  background-image: url('../assets/bg-forms/form-1.svg');
+  -webkit-animation: movebounce 3s linear infinite;
+  animation: movebounce 3s linear infinite;
+}
+
+
+@keyframes movebounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.bg-gradient-1 {
+  background-image: url('../assets/bg-gradients/bg-2.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200vh;
+}
+
+
+.icon-heading {
+  padding-top: 0.6rem;
+  svg {
+    position: absolute;
+    top: 1.2rem;
+    right: calc(100% + 16px);
+  }
+}

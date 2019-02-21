@@ -1,0 +1,229 @@
+//main: ../../index.scss
+
+$delays: 0.06s 0.1s 0.14s 0.18s 0.22s 0.26s;
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  @include transition(0.3s ease);
+
+  .location__header {
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    width: 100%;
+  }
+
+  .nav__content {
+    overflow: hidden;
+    ::-webkit-scrollbar-thumb {
+      background-color: $color-accent;
+      border-radius: 4px;
+    }
+
+    display: block;
+    z-index: 5;
+    padding: 80px 0 20px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+    ul {
+      padding-bottom: 100px;
+    }
+
+    li {
+      max-width: 720px;
+      padding: 0 20px;
+      width: 100%;
+      transition: 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+      @include translateX(-120%);
+
+      a {
+        text-align: left;
+        font-size: 0.74rem;
+        width: 100%;
+        padding: .9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: $font-secondary;
+        transition: 0.35s ease;
+        margin: 12px 12px 0;
+
+        span {
+          overflow: hidden;
+        }
+        span:before {
+          transition: 0.4s linear;
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color:  rgba(252, 195, 71, 0.6);
+          transform: translateX(calc(-100% - 2px));
+          transform-origin: left center;
+        }
+
+        &.active, &:hover {
+          transition: 0.3s ease 0.25s;
+          color: $ca-yellow;
+          span:before {
+            transform: translateX(calc(100% + 2px));
+          }
+        }
+      }
+
+      .sub-menu {
+        position: relative;
+        min-width: 100%;
+        padding: 0;
+        padding-left: 1.8rem;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 14px;
+          top: 0;
+          width: 2px;
+          height: 100%;
+          background-color: $color-tertiary-dark;
+        }
+
+        a {
+          width: 100%;
+          margin: 0;
+          transition: 0.4s ease;
+          padding: 0.9rem 0.5rem;
+          padding-left: 1rem;
+          background-color: #222;
+          border-bottom: 2px solid $color-primary;
+          // background-color: $color-tertiary-dark
+
+
+          &:hover, &.active {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &.open {
+    background-color: $color-primary;
+    transition: 0.3s ease 0.2s;
+    visibility: visible;
+    opacity: 1;
+
+    ul li {
+      @include translateX(0);
+      .sub-menu {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  @include respond-to('(min-width: 812px)') {
+    .location__header {
+      display: none;
+    }
+  };
+
+  @include respond-to($nav) {
+    opacity: 1;
+    visibility: visible;
+    height: $headerHeight;
+    width: auto;
+    position: relative;
+
+    .nav__content {
+      display: flex;
+      overflow: visible;
+      padding: 0;
+      overflow-y: visible;
+
+      ul {
+        padding-bottom: 0;
+        align-items: center!important;
+        align-content: center;
+      }
+
+      li {
+        padding: 0;
+        @include translateY(-85px);
+        width: auto;
+
+        a {
+          text-align: center;
+          margin: 0;
+          margin: 0;
+        }
+
+        .sub-menu {
+          box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.2);
+          top: 100%;
+          left: 0;
+          padding: 0;
+          position: absolute;
+          visibility: hidden;
+          &::before {
+            content: none;
+          }
+
+          a {
+            text-align: left;
+            opacity: 0;
+            margin: 5px 0;
+            border-top: 1px solid $color-primary-dark;
+            border-bottom: 0;
+            margin: 6px 0;
+            font-size: 0.7rem;
+            padding: 0.9rem 1.2rem;
+            background-color: #fff;
+          }
+        }
+        &:hover .sub-menu {
+          visibility: visible;
+
+          a {
+            opacity: 1;
+            margin: 0;
+          }
+        }
+      }
+    }
+  };
+}
+
+.after-loaded {
+  .above-header ,header .logo-container {
+    @include translateX(0);
+    opacity: 1;
+  }
+  header {
+    @include translateY(0);
+  }
+
+  @include respond-to($nav) {
+    nav ul li {
+      @include translateY(0);
+    }
+  };
+}
+
+.loc-modal {
+  @include respond-to($nav) {
+    nav ul li {
+      @include translateY(-300%);
+    }
+  };
+}

@@ -1,0 +1,38 @@
+@import "utils/mixins";
+@import "utils/media-querys";
+@import "utils/variables";
+
+@import "base/base";
+@import "base/normalize";
+@import "base/typography";
+@import "base/colors";
+
+@import "layout/flexbox";
+@import "layout/grid";
+@import "layout/basic-layouts";
+
+@import "singleStyles/shadows";
+@import "singleStyles/scrollable";
+@import "singleStyles/overlay";
+@import "singleStyles/fancy-corners";
+
+
+@import "components/loader";
+@import "components/header/header";
+@import "components/header/nav";
+@import "components/header/nav-button";
+
+@import "components/btn";
+@import "components/card";
+@import "components/footer";
+@import "components/form";
+@import "components/hero-stuff";
+@import "components/list";
+@import "components/slider";
+@import "components/stuff";
+@import "components/trenner";
+@import "components/parallax";
+
+@import "components/services";
+
+@import "animations/animations.scss";
