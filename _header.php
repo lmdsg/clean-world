@@ -22,7 +22,10 @@ if(isset($activePage)) {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
 
-  <script src="js/helpers.js" type="text/javascript"></script>
+  <!-- <script src="js/dist/vendors~scripts.index.js" type="text/javascript"></script>
+  <script src="js/dist/vendors~index.js" type="text/javascript"></script>
+  <script src="js/dist/vendors~gallery~index.js" type="text/javascript"></script> -->
+  <script src="js/dist/index.js" type="text/javascript"></script>
 
   <?php if(isset($gsap)): ?>
     <script type="text/javascript" src="vendor/gsap/TweenLite.min.js"></script>

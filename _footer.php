@@ -9,13 +9,6 @@
   </p>
 </footer>
 
-
-<script type="text/javascript" src="vendor/effects/rellax.min.js"></script>
-<script src="js/index.js" type="text/javascript"></script>
-<script src="js/dont-go.js" type="text/javascript"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-
 <?php if(isset($sliderHero)): ?>
   <script src="js/slider.js" type="text/javascript"></script>
 <?php endif; ?>

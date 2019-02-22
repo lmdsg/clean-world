@@ -1,0 +1,123 @@
+//main: ../index.scss
+.gallery {
+
+  &__container {
+    padding: 1rem;
+  }
+
+  &__content {
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 12;
+    text-transform: uppercase;
+    color: #fff;
+
+    h5:before {
+      content: "";
+      position: absolute;
+      transform-origin: center;
+      bottom: -8px;
+      border-top: 2px solid #fff;
+      width: 50%;
+      left: 50%;
+      transform: translateX(-50%) scaleX(0);
+    }
+
+    .icons {
+      font-size: 1.8rem;
+      overflow: hidden;
+
+      a {
+        color: #fff;        
+      }
+      svg {
+        transform: translateY(-120%);
+        margin: 4px 8px;
+        cursor: pointer;
+        transition: 0.3s  ease-out;
+        &:hover {
+          color: $color-primary-light;
+        }
+        &:last-child {
+          transition-delay: 0.1s;
+        }
+      }
+    }
+  }
+
+  &__item {
+    padding: 0.8rem;
+
+    .img {
+      padding-top: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background-color: $ca-yellow;
+        opacity: 0;
+      }
+
+      &:after {
+        transition: 0.4s ease-in;
+        $afterPadding: 3rem;
+        content: "";
+        position: absolute;
+        top: $afterPadding / 2;
+        left: $afterPadding / 2;
+        width: calc(100% - #{$afterPadding});
+        height: calc(100% - #{$afterPadding});
+        background: $ca-yellow;
+        opacity: 0;
+        z-index: 10;
+      }
+    }
+    &:nth-of-type(2n) .img {
+      &:before, &:after{
+        background-color: $ca-blue;
+      }
+    };
+    &:nth-of-type(3n) .img {
+      &:before, &:after{
+        background-color: $ca-magenta;
+      }
+    };
+    &:nth-of-type(4n) .img {
+      &:before, &:after{
+        background-color: $ca-green;
+      }
+    };
+
+    &:hover {
+      .gallery__content {
+        opacity: 1;
+
+        h5:before {
+          transform: translateX(-50%) scaleX(1);
+        }
+        .icons {
+          svg {
+            transform: translateY(0);
+          }
+        }
+      }
+      .img {
+        &:before {
+          opacity: 0.4;
+        }
+        &:after {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}

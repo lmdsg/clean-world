@@ -1,3 +1,11 @@
+import {
+  onDomLoad, isIE, isMobile,
+  removeClass, toggleClass, addClass
+} from './src/helpers';
+import dontGo from 'dont-go';
+import Rellax from 'rellax';
+import AOS from 'aos';
+
 function initLibraryStuff() {
   AOS.init({
     useClassNames: true,
@@ -25,19 +33,20 @@ function checkCookie() {
 }
 
 function handleLoader() {
+  let body = document.body;
   setTimeout(function () {
     addClass(body, 'handle-loader');
   }, 200);
 }
 
 function addBodyClasses(timeout) {
+  let body = document.body;
   addClass(body, 'is-loaded');
   setTimeout(function () {
     addClass(body, 'after-loaded');
   }, timeout || 500);
 }
 
-var body = document.querySelector('body');
 
 onDomLoad(function () {
   checkCookie();
@@ -47,9 +56,8 @@ onDomLoad(function () {
   initLibraryStuff();
 
   handleLoader();
-  // if(loc.getLocation()) {
-    addBodyClasses(600);
-  // }
+  addBodyClasses(600);
+
 
   initLinks();
 
@@ -129,18 +137,20 @@ function handleScrollStuff() {
 }
 
 
-var heroVid = document.querySelector('.hero-vid__container');
-var heroSlider = document.querySelector('.slides');
+const handleHeroParallax = () => {
+  var heroVid = document.querySelector('.hero-vid__container');
+  var heroSlider = document.querySelector('.slides');
 
-function handleHeroParallax(wScroll) {
-  // callback every position change
-  var el = heroVid || heroSlider;
-  if(!el) return;
-  if (wScroll< window.innerHeight) {
-    var speed = 0.5;
-    var scaleBy = 1 + (wScroll * (speed * 0.0008));
+  return (wScroll) => {
+    // callback every position change
+    var el = heroVid || heroSlider;
+    if(!el) return;
+    if (wScroll< window.innerHeight) {
+      var speed = 0.5;
+      var scaleBy = 1 + (wScroll * (speed * 0.0008));
 
-    el.style.cssText = "transform: translate3d(0px, "+wScroll+"px, 0px) scale("+scaleBy+"); opacity: "+ (1 - wScroll *(speed * 0.003));
+      el.style.cssText = "transform: translate3d(0px, "+wScroll+"px, 0px) scale("+scaleBy+"); opacity: "+ (1 - wScroll *(speed * 0.003));
+    }
   }
 }
 

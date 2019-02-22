@@ -8,7 +8,7 @@ include '_header.php';
 <div class="section-padding p-big-sides">
   <div class="circle-pattern-1"></div>
   <div class="container-big row justify-space-around flex-align-start">
-    <div class="col-md-9 col-lg-6 white about-image row">
+    <div class="col-md-9 col-lg-5 white about-image row">
       <div class="col-6">
         <div class="img bg-ca-magenta row justify-center flex-align-center">
           <img src="assets/icons/sicher.svg" alt="">
@@ -60,6 +60,17 @@ include '_header.php';
 
 
 <?php include 'components/services.php'; ?>
+
+<div
+  class="gradient- bg-gradient-3 row flex-align-center justify-center"
+  style=""
+>
+  <div class="h4 white bold">
+    “VERTRAUEN IST DER ANFANG – ZUSAMMENARBEIT DER ERFOLG”
+  </div>
+</div>
+
+<?php include 'components/gallery.php'; ?>
 
 </section>
 <?php include '_footer.php';?>
