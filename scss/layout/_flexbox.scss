@@ -115,3 +115,8 @@
     @include prefix(justify-content, space-between);
   }
 }
+.justify-space-between-lg {
+  @include respond-to($large) {
+    @include prefix(justify-content, space-between);
+  }
+}

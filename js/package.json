@@ -23,6 +23,7 @@
     "dont-go": "^1.1.1",
     "rellax": "^1.8.0",
     "shufflejs": "^5.2.1",
+    "simple-lightbox": "^2.1.0",
     "vanilla-tilt": "^1.6.1",
     "webpack-merge": "^4.2.1"
   }

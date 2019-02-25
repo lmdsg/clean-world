@@ -1,11 +1,11 @@
 // main: ../index.scss
 .card {
   @extend .shadow;
-  padding: 1rem;
+  padding: 1.2rem;
   position: relative;
   background-color: #fff;
   border-radius: .625rem;
-  box-shadow: 0px 3px 45px 0px rgba(197, 197, 197, 0.35);
+  box-shadow: 0px 3px 45px 0px rgba(0, 0, 0, 0.45);
 
   &-primary {
     @extend .card;
@@ -35,6 +35,26 @@
       left: 0;
       height: 100%;
       width: auto;
+    }
+  }
+
+  &__icon {
+    @extend .card;
+    padding-left: 95px;
+
+    .icon {
+      position: absolute;
+      left: 25px;
+      top: 25px;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      color: $ca-magenta;
+      line-height: 47px;
+      border: 1px solid $ca-magenta;
+      border-radius: 50%;
+      font-size: 22px;
+      transition: .4s;
     }
   }
 }

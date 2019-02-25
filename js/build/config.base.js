@@ -5,7 +5,8 @@ const { presets } = require('./babel.config.js');
 module.exports = {
   entry: {
     index: path.resolve(SRC, 'index.js'),
-    gallery: path.resolve(__dirname, '../src', 'gallery.js')
+    gallery: path.resolve(__dirname, '../src', 'gallery.js'),
+    form: path.resolve(__dirname, '../src', 'form.js'),
   },
   module: {
     rules: [

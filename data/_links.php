@@ -3,12 +3,19 @@ include 'services.php';
 $pages = array();
 $pages["index.php"] = [
   "nav" => "Home",
+  'title' => 'Willkommen bei <span>Clean World</span>',
+  'text' => '
+    Wir helfen Ihnen bei allen Tätigkeiten rund um Haus, Garten, Büro und Wohnen!
+    Wir sind Ihr zuverlässiger Partner für Qualität und Kundenorientierung!
+  ',
 ];
 
 $pages["services.php"] = [
   "nav" => "Unsere Leistungen",
-  "pre-title" => '',
-  'title' => '',
+  'title' => 'Unsere <span>Services</span>',
+  "text" => '
+    Wir reinigen für Sie mit langjähriger Erfahrung die unterschiedlichsten Bereiche, egal ob im geschäftlichen, öffentlichen oder privaten Umfeld
+  ',
   'hero-img' => [
     'assets/imgs/open-hours.jpg',
     'assets/imgs/open-hours2.jpg'
@@ -27,25 +34,12 @@ $pages["about-us.php"] = [
 
 $pages["contact.php"] = [
   "nav" => "Kontakt",
-  "pre-title" => '',
-  "title" => "",
-  'text' => '',
-  'hero-img' => [
-    'assets/imgs/preise.jpg',
-    'assets/imgs/lobby.jpg'
-  ],
+  "title" => "Kontakt",
+  'text' => 'Nehmen Sie Kontakt mit uns auf',
+  'hero-graphic' => 'eco.svg',
+  'hero-gradient' => 'bg-gradient-2'
 ];
 
-$pages["contact.php"] = [
-  "nav" => "Kontakt",
-  "pre-title" => 'Nehmen Sie mit uns Kontakt auf',
-  "title" => "Carlovers <span class='loc-title'></span>",
-  'text' => '',
-  'hero-img' => [
-    'assets/imgs/spezial-reinigung.jpg',
-    'assets/imgs/lobby.jpg'
-  ],
-];
 $pages["imprint.php"] = [
   "nav" => "Impressum",
   'pre-title'=>'',

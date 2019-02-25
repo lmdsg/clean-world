@@ -76,6 +76,12 @@ p, li, ul, span {
     color:  #fff;
   }
 }
+@include respond-to($large) {
+  .white-lg {
+    color: #fff;
+  }
+};
+
 .accent {
   color: $color-accent;
 }

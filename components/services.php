@@ -1,15 +1,19 @@
 <?php include 'data/services.php'; ?>
 
 <section class="p-big">
-  <div class="circle-pattern-2 bg-img-contain"></div>
-  <div class="container">
-    <div class="col-md-6">
-      <h2 class="uppercase ca-blue">Unsere Services</h2>
-      <p class="lead secondary-dark">
-        Wir reinigen für Sie mit langjähriger Erfahrung die unterschiedlichsten Bereiche, egal ob im geschäftlichen, öffentlichen oder privaten Umfeld
-      </p>
+  <div class="circle-pattern-2 bg-img-contain <?php echo isset($noServHeading) ? 'end-circle-el' : ''; ?>"></div>
+
+  <?php if(!isset($noServHeading)): ?>
+    <div class="container">
+      <div class="col-md-6">
+        <h2 class="uppercase ca-blue">Unsere Services</h2>
+        <p class="lead secondary-dark">
+          Wir reinigen für Sie mit langjähriger Erfahrung die unterschiedlichsten Bereiche, egal ob im geschäftlichen, öffentlichen oder privaten Umfeld
+        </p>
+      </div>
     </div>
-  </div>
+  <?php endif; ?>
+
   <div class="container row flex-align-stretch">
     <?php foreach ($services as $key => $service): ?>
       <div class="col-lg-4 col-md-6 row flex-align-stretch">

@@ -45,10 +45,6 @@ $gallery = [
   ],
   [
     'category' => 'Winterdienst',
-    'img' => 'winter.jpg',
-  ],
-  [
-    'category' => 'Winterdienst',
     'img' => 'winter2.jpg',
   ],
 ]
@@ -56,40 +52,44 @@ $gallery = [
 ?>
 
 <section class="gallery__container ">
-  <div class="gallery__filters">
-    <div class="btn" data-group="Hausdienst">Hausdienst</div>
-    <div class="btn" data-group="Bodenreinigung">Bodenreinigung</div>
-    <div class="btn" data-group="Gartendienst">Gartendienst</div>
-    <div class="btn" data-group="Winterdienst">Winterdienst</div>
-    <div class="btn" data-group="Alround Service">Alround Service</div>
-    <div class="btn" data-group="Glasreinigung">Glasreinigung</div>
+  <div class="container-big row justify-center flex-align-center">
+    <?php include 'assets/gallerie.svg'; ?>
+  </div>
+
+  <div class="gallery__filters row justify-center">
+    <div class="btn-border" data-group="hausdienst">Hausdienst</div>
+    <div class="btn-border" data-group="bodenreinigung">Bodenreinigung</div>
+    <div class="btn-border" data-group="gartendienst">Gartendienst</div>
+    <div class="btn-border" data-group="winterdienst">Winterdienst</div>
+    <div class="btn-border" data-group="alround service">Alround Service</div>
+    <div class="btn-border" data-group="glasreinigung">Glasreinigung</div>
   </div>
   <div class="gallery">
     <?php
     $counter =1;
     foreach ($gallery as $key => $item):
-      $theIF = $counter % 3 == 0;
+      $theIF = $counter % 3 == 0 && $counter !== 12;
     ?>
       <figure
-        class="gallery__item col-md-5 <?php echo $theIF ? 'col-lg-6' : 'col-lg-3'; ?>"
-        data-group='["<?php echo $item['category']; ?>"]'
+        class="gallery__item col-ms-6 col-md-4 <?php echo $theIF ? 'col-lg-6' : 'col-lg-3'; ?>"
+        data-groups='["<?php echo strtolower($item['category']); ?>"]'
       >
-        <div
-          class="img bg-img"
-          style="background-image: url(assets/gallery/<?php echo $theIF ? 'big/' : 'thumb/'; echo $item['img']; ?>)"
-        >
-          <div class="gallery__content ca-all">
-            <h5><?php echo $item['category'] ?></h5>
-            <div class="icons row nowrap justify-center">
-              <a href="#">
-                <i class="fa fa-search-plus"></i>
-              </a>
-              <a href="#">
-                <i class="fa fa-link"></i>
-              </a>
+          <div
+            class="img bg-img"
+            style="background-image: url(assets/gallery/<?php echo $theIF ? 'big/' : 'thumb/'; echo $item['img']; ?>)"
+          >
+            <div class="gallery__content ca-all">
+              <h5><?php echo $item['category'] ?></h5>
+              <div class="icons row nowrap justify-center">
+                <a href="assets/gallery/big/<?php echo $item['img']; ?>">
+                  <i class="fa fa-search-plus"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-link"></i>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
       </figure>
     <?php
     $counter++;

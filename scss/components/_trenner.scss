@@ -55,26 +55,16 @@
   }
 
 
-  &-top:before {
-    content: "";
-    position: absolute;
-    top: -4px;
-    height: 8px;
-    width: 40px;
-    background-color: $color-accent;
-    left: calc(50% - 20px);
-  }
-  &-bottom {
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-    &:before {
+  &-bottom span {
+    display: inline-block;
+    &:before{
       content: "";
       position: absolute;
       bottom: -2px;
-      height: 8px;
-      width: 40px;
-      background-color: $color-accent;
-      left: calc(50% - 20px);
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: $gradient1;
     }
   }
 }

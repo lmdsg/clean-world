@@ -16,14 +16,14 @@ class Gallery {
 
   addShuffleEventListeners() {
     this.shuffle.on(Shuffle.EventType.LAYOUT, (data) => {
-      console.log('layout. data:', data);
+      // console.log('layout. data:', data);
     });
     this.shuffle.on(Shuffle.EventType.REMOVED, (data) => {
-      console.log('removed. data:', data);
+      // console.log('removed. data:', data);
     });
   }
   addFilterButtons() {
-    const options = document.querySelector('.filter-options');
+    const options = document.querySelector('.gallery__filters');
     if (!options) {
       return;
     }
@@ -38,7 +38,7 @@ class Gallery {
   _handleFilterClick(e) {
     const btn = e.currentTarget;
     const isActive = btn.classList.contains('active');
-    const btnGroup = btn.getAttribute('data-group');
+    const btnGroup = btn.dataset.group;
 
     this._removeActiveClassFromChildren(btn.parentNode);
 
@@ -48,9 +48,8 @@ class Gallery {
       filterGroup = Shuffle.ALL_ITEMS;
     } else {
       btn.classList.add('active');
-      filterGroup = btnGroup;
+      filterGroup = [btnGroup];
     }
-
     this.shuffle.filter(filterGroup);
   }
   _removeActiveClassFromChildren(parent) {

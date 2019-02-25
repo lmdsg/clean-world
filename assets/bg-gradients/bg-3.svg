@@ -1,0 +1,20 @@
+<svg id="Bakground" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1009.92 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #abd8c8;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="968.2" y1="530.06" x2="1920" y2="530.06" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3672e2"/>
+      <stop offset="1" stop-color="#570065"/>
+    </linearGradient>
+  </defs>
+  <title>bg-3</title>
+  <path class="cls-1" d="M910.08,0s28.8,67.64,145.53,75.66c104.14,7.16,212.15,19,223.61,134.36,11.52,116.09-369.14,162-248.62,449.53C1092,806,1245,751.08,1320.8,815.68c68.2,58.09,7.58,181,114.2,232.37,119,59.77,197-65.64,314.54-72.33C1872.44,968.73,1920,1080,1920,1080V0Z" transform="translate(-910.08)"/>
+  <path class="cls-2" d="M968.2,0S995.27,63.57,1105,71.11c97.86,6.72,199.38,17.8,210.15,126.27C1326,306.48,968.2,349.61,1081.46,619.85c57.68,137.62,201.46,86,272.74,146.73,64.08,54.59,7.12,170.11,107.32,218.39,111.84,56.16,196.5-60.54,304.5-36.35,110.33,24.71,154,111.5,154,111.5V0Z" transform="translate(-910.08)"/>
+</svg>

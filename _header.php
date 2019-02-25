@@ -134,49 +134,68 @@ if(isset($activePage)) {
 <?php
 if (!isset($noHero)):
 $heroItem = isset($activeTrigger) ? $page['sub-menu'][$activeTrigger] : $page;
+$graphic = isset($heroItem['hero-graphic']) ? $heroItem['hero-graphic'] : 'pool-cleaning.svg';
+$bgGradient = isset($heroItem['hero-gradient']) ? $heroItem['hero-gradient'] : 'bg-gradient-1';
 ?>
 <section class="nop big-gradient-section">
-  <div class="bg-gradient-1 bg-img-contain fw fh"></div>
+  <div class="<?php echo $bgGradient; ?> bg-img-contain fw fh"></div>
   <div class="fh-v fw overflow-hidden hero">
-    <div class="hero__content fh row flex-align-stretch justify-space-between">
+    <div class="hero__content p-big fh row flex-align-stretch justify-space-between">
       <div class="col-md-6 col-ml-5 col-lg-4 row flex-align-center">
         <div>
-          <h1 class="ca-blue">Willkommen bei <span>Clean World</span></h1>
+          <h1 class="ca-blue"><?php echo $heroItem['title']; ?></h1>
           <p class="lead secondary-dark">
-            Wir helfen Ihnen bei allen Tätigkeiten rund um Haus, Garten, Büro und Wohnen!
-            Wir sind Ihr zuverlässiger Partner für Qualität und Kundenorientierung!
+            <?php echo $heroItem['text']; ?>
           </p>
         </div>
       </div>
       <div class="col-ml-7 row flex-align-end justify-center">
-        <?php include 'assets/graphics/pool-cleaning.svg'; ?>
+        <?php include 'assets/graphics/'.$graphic; ?>
       </div>
     </div>
   </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script type="text/javascript">
-  TweenMax.staggerTo('.tree-r', 3, {
-    transformOrigin: 'center bottom',
-    yoyo: true,
-    rotation: -8,
-    ease: Sine.easeInOut,
-    repeat: -1
-  }, 0.2)
-  TweenMax.staggerTo('.tree-l', 3.4, {
-    transformOrigin: 'center bottom',
-    yoyo: true,
-    rotation: 8,
-    ease: Sine.easeInOut,
-    repeat: -1
-  }, 0.4)
-  TweenMax.staggerTo('.cloud', 4, {
-    transformOrigin: 'center bottom',
-    yoyo: true,
-    rotation: 4,
-    x: -80,
-    ease: Sine.easeInOut,
-    repeat: -1
-  }, 0.2)
+function onDomLoad(eventFunction) {
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", eventFunction);
+  } else {  // `DOMContentLoaded` already fired
+    eventFunction();
+  }
+}
+  onDomLoad(function () {
+    TweenMax.staggerTo('.tree-r', 3, {
+      transformOrigin: 'center bottom',
+      yoyo: true,
+      rotation: -8,
+      ease: Sine.easeInOut,
+      repeat: -1
+    }, 0.2)
+    TweenMax.staggerTo('.tree-l', 3.4, {
+      transformOrigin: 'center bottom',
+      yoyo: true,
+      rotation: 8,
+      ease: Sine.easeInOut,
+      repeat: -1
+    }, 0.4)
+    TweenMax.staggerTo('.cloud', 4, {
+      transformOrigin: 'center bottom',
+      yoyo: true,
+      rotation: 4,
+      x: -80,
+      ease: Sine.easeInOut,
+      repeat: -1
+    }, 0.2);
+    TweenMax.staggerTo('.sparkle', 2, {
+      transformOrigin: 'center',
+      rotation: 360,
+      scale: 1.2,
+      yoyo: true,
+      ease: Sine.easeInOut,
+      repeat: -1,
+      repeatDelay: 5,
+    }, 0.5)
+  })
 </script>
 <?php endif; ?>

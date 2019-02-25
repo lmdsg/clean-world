@@ -54,14 +54,29 @@
 }
 .circle-pattern-2 {
   opacity: 1;
-  height: 39em;
   position: absolute;
-  width: 50vw;
   bottom: 15%;
+  width: 90vw;
+  height: 80vw;
   left: 5%;
   background-image: url('../assets/bg-forms/form-1.svg');
   -webkit-animation: movebounce 3s linear infinite;
   animation: movebounce 3s linear infinite;
+  display: none;
+
+  @include respond-to($large) {
+    height: 39em;
+    width: 50vw;
+  };
+  @include respond-to($medium){
+    display: block;
+  };
+
+  &.end-circle-el {
+    @include respond-to('(max-width: 1700px)') {
+      display: none;
+    };
+  }
 }
 
 
@@ -86,6 +101,31 @@
   top: 0;
   left: 0;
   height: 200vh;
+}
+.bg-gradient-2 {
+  background-image: url('../assets/bg-gradients/bg-3.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+.bg-gradient-contact {
+  background-image: url('../assets/bg-gradients/contact-bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-section {
+  min-height: 100vh;
 }
 
 .bg-gradient-3 {

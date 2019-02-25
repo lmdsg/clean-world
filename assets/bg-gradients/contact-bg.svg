@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 716.34 813.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_6);
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_6" data-name="Unbenannter Verlauf 6" x1="50.18" y1="24.93" x2="535.22" y2="602.98" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e10ca6"/>
+      <stop offset="1" stop-color="#1d144e"/>
+    </linearGradient>
+  </defs>
+  <title>contact</title>
+  <g id="Illustration">
+    <path class="cls-1" d="M686.32,277.12C766.88,154.83,677.22-16.08,513.81,67S387.52,27.31,227.56,19,0,67,0,67V645.3S78.28,813.83,235.27,813.83s47.63-159.52,224.9-185.14S584.06,432.37,686.32,277.12Z"/>
+  </g>
+</svg>

@@ -31,4 +31,31 @@
       color: #fff;
     }
   }
+
+  &-border {
+    @extend .btn;
+    border-color: $ca-blue;
+    background-color: transparent;
+    color: $ca-blue;
+
+    &:hover, &.active {
+      border-color: $ca-blue;
+      background-color: $ca-blue;
+      color: #fff;
+    }
+  }
+  &-gradient {
+    @extend .btn;
+    background: $gradient1;
+    border: 0!important;
+    background-size: 200%;
+    background-position: center;
+    transition: 0.3s ease-in;
+    padding: 12px 30px;
+
+    &:hover {
+      color: #fff;
+      background-position: left;
+    }
+  }
 }

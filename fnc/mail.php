@@ -9,12 +9,6 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    $sendTo = [
-      'graz' => 'graz@carlovers.at',
-      'klgft' => 'office@carlovers-klagenfurt.at',
-      'linz' => 'linz@carlovers.at'
-    ];
-
 
     $mail = new PHPMailer();
 

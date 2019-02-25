@@ -7,7 +7,7 @@ include '_header.php';
 ?>
 <div class="section-padding p-big-sides">
   <div class="circle-pattern-1"></div>
-  <div class="container-big row justify-space-around flex-align-start">
+  <div class="container-big row justify-start justify-space-between-lg flex-align-start">
     <div class="col-md-9 col-lg-5 white about-image row">
       <div class="col-6">
         <div class="img bg-ca-magenta row justify-center flex-align-center">
@@ -42,7 +42,7 @@ include '_header.php';
         </div>
       </div>
     </div>
-    <div class="col-lg-5 column justify-center white" style="margin-left: 1.5rem;">
+    <div class="col-ml-6 col-lg-5 column justify-center white-lg" style="margin-left: 1.5rem;">
       <div class="icon-heading">
         <div class="text-marked">
           Sicher - Schnell - Sauber - Service
@@ -58,7 +58,6 @@ include '_header.php';
   </div>
 </div>
 
-
 <?php include 'components/services.php'; ?>
 
 <div
@@ -73,4 +72,5 @@ include '_header.php';
 <?php include 'components/gallery.php'; ?>
 
 </section>
+<?php include 'components/contact.php'; ?>
 <?php include '_footer.php';?>

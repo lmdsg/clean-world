@@ -1,10 +1,4 @@
-function onDomLoad(eventFunction) {
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", eventFunction);
-  } else {
-    eventFunction();
-  }
-}
+import { onDomLoad, addELM } from './helpers';
 
   var form = document.querySelector('#contact-form');
   var textareas = form.querySelectorAll('textarea');

@@ -1,0 +1,20 @@
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1919.68 630.11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #abd8c8;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1266.29" y1="-256.22" x2="598.63" y2="1112.69" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3672e2"/>
+      <stop offset="1" stop-color="#570065"/>
+    </linearGradient>
+  </defs>
+  <title>footer</title>
+  <path class="cls-1" d="M1269.46,243.1c-145.63,0-274-123.57-416.12-125.25C697.5,116,596.91,171.54,458,171.54,303.45,171.54,129.84,151.64.32-.18V368.41H1920V34.78C1597.31,8.85,1459.8,243.1,1269.46,243.1Z" transform="translate(-0.32 0.18)"/>
+  <path class="cls-2" d="M1920,270c-61.25-52.1-195.26-63.44-297.9-45.88-144.62,24.75-390.33,213.46-564.91,84.07-156-115.62-276.6-69.48-333.54-84.75-74.29-19.92-57.31-80.19-158.18-108.9C460.62,84.73,272,157.76,194.24,167.05c-77.95,9.32-158-5.77-193.92-54.1v517H1920Z" transform="translate(-0.32 0.18)"/>
+</svg>
