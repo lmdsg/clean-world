@@ -20,6 +20,7 @@ if(isset($activePage)) {
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css" />
+  <link rel="stylesheet" href="vendor/baguette-box.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
 
   <!-- <script src="js/dist/vendors~scripts.index.js" type="text/javascript"></script>
@@ -33,6 +34,7 @@ if(isset($activePage)) {
     <script type="text/javascript" src="vendor/gsap/CSSPlugin.min.js"></script>
     <script type="text/javascript" src="vendor/gsap/EasePack.min.js"></script>
   <?php endif; ?>
+
   <script type="text/javascript" src="vendor/fontawesome/fontawesome.min.js"></script>
   <script type="text/javascript" src="vendor/fontawesome/custom-icon-pack.js"></script>
 
@@ -142,7 +144,7 @@ $bgGradient = isset($heroItem['hero-gradient']) ? $heroItem['hero-gradient'] : '
   <div class="fh-v fw overflow-hidden hero">
     <div class="hero__content p-big fh row flex-align-stretch justify-space-between">
       <div class="col-md-6 col-ml-5 col-lg-4 row flex-align-center">
-        <div>
+        <div class="hero__card">
           <h1 class="ca-blue"><?php echo $heroItem['title']; ?></h1>
           <p class="lead secondary-dark">
             <?php echo $heroItem['text']; ?>

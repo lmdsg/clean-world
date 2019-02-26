@@ -81,7 +81,7 @@ $gallery = [
             <div class="gallery__content ca-all">
               <h5><?php echo $item['category'] ?></h5>
               <div class="icons row nowrap justify-center">
-                <a href="assets/gallery/big/<?php echo $item['img']; ?>">
+                <a class="open-lightbox" href="assets/gallery/big/<?php echo $item['img']; ?>">
                   <i class="fa fa-search-plus"></i>
                 </a>
                 <a href="#">

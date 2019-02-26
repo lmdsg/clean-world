@@ -74,7 +74,7 @@ onDomLoad(function () {
   });
 
   window.addEventListener('scroll', function (e) {
-    var wScroll = window.scrollY;
+    var wScroll = window.scrollY || window.pageYOffset;
     handleHeader(wScroll);
   })
 
@@ -86,6 +86,7 @@ onDomLoad(function () {
   function handleHeader(wScroll) {
     clearTimeout(ht);
     ht = setTimeout(function () {
+      console.log(wScroll);
       if(wScroll > 0) {
         addClass(header, 'fixed');
         htTimeout = 100;

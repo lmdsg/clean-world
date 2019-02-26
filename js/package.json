@@ -20,8 +20,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "aos": "^3.0.0-beta.6",
+    "baguettebox.js": "^1.11.0",
     "dont-go": "^1.1.1",
-    "muuri": "^0.7.1",
     "rellax": "^1.8.0",
     "shufflejs": "^5.2.1",
     "simple-lightbox": "^2.1.0",

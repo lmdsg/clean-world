@@ -27,6 +27,16 @@
       width: 100%;
     }
   }
+
+  &__card {
+    @include respond-to('(max-width: 1312px)') {
+      background-color: #fff;
+      border-radius: .625rem;
+      padding: 1.4rem;
+      box-shadow: 0px 10px 20px 0px rgba(130,136,147,0.25);
+    };
+  }
+
   @include respond-to($medium-large) {
     max-height: 70vw;
   }

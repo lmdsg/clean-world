@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 678 476">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 678 465">
+  <!-- orig-viewBox 0 0 678 465 -->
   <defs>
     <style>
       .eco-1{mask:url(#mask);filter:url(#luminosity-noclip-2)}.eco-2{mix-blend-mode:multiply;fill:url(#eco-gradient)}.eco-3{fill:url(#eco-gradient-2)}.eco-30,.eco-4,.eco-52,.eco-7{fill:#fff}.eco-4{opacity:.5}.eco-5{fill:url(#eco-gradient-3)}.eco-6{fill:url(#eco-gradient-4)}.eco-7{opacity:.41}.eco-8{fill:url(#eco-gradient-5)}.eco-9{mask:url(#mask-2)}.eco-10{fill:url(#eco-gradient-6)}.eco-11{fill:url(#eco-gradient-7)}.eco-12{fill:url(#eco-gradient-8)}.eco-13{fill:url(#eco-gradient-9)}.eco-14{fill:url(#eco-gradient-10)}.eco-15{fill:url(#eco-gradient-11)}.eco-16{fill:url(#eco-gradient-12)}.eco-17{fill:url(#eco-gradient-13)}.eco-18{fill:url(#eco-gradient-14)}.eco-19{fill:url(#eco-gradient-15)}.eco-20{fill:url(#eco-gradient-16)}.eco-21{fill:url(#eco-gradient-17)}.eco-22{fill:url(#eco-gradient-18)}.eco-23{fill:url(#eco-gradient-19)}.eco-24{fill:url(#eco-gradient-20)}.eco-25{fill:url(#eco-gradient-21)}.eco-26{fill:url(#eco-gradient-22)}.eco-27{fill:url(#eco-gradient-23)}.eco-28{fill:url(#eco-gradient-24)}.eco-29{fill:url(#eco-gradient-25)}.eco-31{fill:url(#eco-gradient-26)}.eco-32{fill:url(#eco-gradient-27)}.eco-33{fill:url(#eco-gradient-28)}.eco-34{fill:url(#eco-gradient-29)}.eco-35{fill:url(#eco-gradient-30)}.eco-36{fill:url(#eco-gradient-31)}.eco-37{fill:url(#eco-gradient-32)}.eco-38{fill:url(#eco-gradient-33)}.eco-39{fill:url(#eco-gradient-34)}.eco-40{fill:url(#eco-gradient-35)}.eco-41{fill:url(#eco-gradient-36)}.eco-42{fill:url(#eco-gradient-37)}.eco-43{fill:url(#eco-gradient-38)}.eco-44{fill:url(#eco-gradient-39)}.eco-45{fill:url(#eco-gradient-40)}.eco-46{fill:url(#eco-gradient-41)}.eco-47{fill:url(#eco-gradient-42)}.eco-48{fill:url(#eco-gradient-43)}.eco-49{fill:url(#eco-gradient-44)}.eco-50{fill:url(#eco-gradient-45)}.eco-51{fill:url(#eco-gradient-46)}.eco-52{opacity:.63}.eco-53{filter:url(#luminosity-noclip)}
@@ -107,19 +108,19 @@
   </defs>
   <title>eco</title>
   <g>
-    <g>
+    <g class="tree-l">
       <path class="eco-3" d="M171.45,461.59S102.16,346.36,19.29,297.88A8.15,8.15,0,0,0,7,305.23C8.8,348.36,26.34,475.3,171.45,461.59Z"/>
       <path class="eco-4" d="M156.47,457.52a.35.35,0,0,1-.28.65c-15.57-5.35-78.92-35.82-126.13-121.77a.25.25,0,0,1,.42-.26C43.37,355.44,93.35,425.83,156.47,457.52Z"/>
     </g>
-    <g>
+    <g class="tree-l">
       <path class="eco-5" d="M231,461.28s-45.12-227.2-151.2-354.12a14,14,0,0,0-24.19,4.76C33.35,182.87-12.24,398.88,231,461.28Z"/>
       <path class="eco-4" d="M209.08,445.93a.61.61,0,0,1-.83.9c-22.13-17.75-107-104.09-133.47-270.94a.43.43,0,0,1,.84-.18C85.26,214.51,125.23,357.76,209.08,445.93Z"/>
     </g>
-    <g>
+    <g class="tree-r">
       <path class="eco-6" d="M318,461S228.23,266.25,409.92,173.5C510.86,122,554.35,97.23,573.08,85.42a10.92,10.92,0,0,1,16.68,8C598.72,171.35,613.35,467.14,318,461Z"/>
       <path class="eco-7" d="M525.42,170.21s-165.93,83.92-199.63,257C325.79,427.19,364.41,276.19,525.42,170.21Z"/>
     </g>
-    <g>
+    <g class="tree-r">
       <path class="eco-8" d="M631.72,303.13c-57.32-3.56-285.24-7-313.66,160.57,0,0,246.43,37.74,322-147.16A9.72,9.72,0,0,0,631.72,303.13Z"/>
       <path class="eco-7" d="M342.93,442.9s97.49-92.11,224.79-103.24C567.72,339.66,448.65,366.37,342.93,442.9Z"/>
     </g>

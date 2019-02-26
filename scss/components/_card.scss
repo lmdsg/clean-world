@@ -7,6 +7,11 @@
   border-radius: .625rem;
   box-shadow: 0px 3px 45px 0px rgba(0, 0, 0, 0.45);
 
+  &-list {
+    @extend .card;
+    margin-bottom: 0.9rem;
+  }
+
   &-primary {
     @extend .card;
     background-color: $color-primary;

@@ -1,6 +1,8 @@
 import Shuffle from 'shufflejs';
 import VanillaTilt from 'vanilla-tilt';
+import baguetteBox from 'baguettebox.js';
 import { onDomLoad } from './helpers';
+
 
 class Gallery {
   constructor(el) {
@@ -12,6 +14,14 @@ class Gallery {
     this.addShuffleEventListeners();
     this._activeFilters = [];
     this.addFilterButtons();
+    this.initLightbox();
+  }
+
+  initLightbox() {
+    var elements = document.querySelectorAll('.gallery .open-lightbox');
+    console.log(elements);
+
+    baguetteBox.run('.gallery .open-lightbox')
   }
 
   addShuffleEventListeners() {

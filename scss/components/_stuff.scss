@@ -60,6 +60,7 @@
   height: 80vw;
   left: 5%;
   background-image: url('../assets/bg-forms/form-1.svg');
+  background-repeat: no-repeat;
   -webkit-animation: movebounce 3s linear infinite;
   animation: movebounce 3s linear infinite;
   display: none;
@@ -76,6 +77,11 @@
     @include respond-to('(max-width: 1700px)') {
       display: none;
     };
+  }
+  &-r {
+    @extend .circle-pattern-2;
+    left: auto;
+    right: 5%;
   }
 }
 
@@ -129,7 +135,7 @@
 }
 
 .bg-gradient-3 {
-  height: 140px; 
+  height: 140px;
   padding: 0.9rem 1.6rem;
   background: linear-gradient(310deg, #b9328a, #233894);
   background-size: 400% 400%;
