@@ -1,12 +1,11 @@
 <?php
 $activePage = 'contact.php';
 $headerWhite = true;
-// $noHero = true;
+$map = true;
 include '_header.php';
 
 ?>
-<div style="height: 120px;"></div>
-
+<div class="map"></div>
 <?php include 'components/contact.php'; ?>
 </section>
 <?php include '_footer.php';?>

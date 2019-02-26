@@ -1,17 +1,9 @@
 <?php
-$page = [
-  'nav' => 'Datenschutz',
-  'pre-title' => 'ERKLÄRUNG ZUR INFORMATIONSPFLICHT',
-  'title' => 'Datenschutz',
-  'hero-img' => [
-    'assets/imgs/open-hours.jpg',
-    'assets/imgs/bg-location.jpg',
-  ]
-];
-
+$activePage = 'privacy-policy.php';
+$headerWhite = true;
 include '_header.php';
 ?>
-<section class="white">
+<section>
   <div class="container-middle-big policies">
     <div class="avia_textblock " itemprop="text">
       <h2 class="uppercase trenner-tertiary">ERKLÄRUNG ZUR INFORMATIONSPFLICHT</h2>

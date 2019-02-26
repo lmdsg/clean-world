@@ -1,6 +1,7 @@
 //main: ../index.scss
 
 .services-small {
+  width: 100%;
   text-align: center;
   background: #ffffff;
   padding: 25px;
@@ -20,6 +21,9 @@
     border-radius: 5px;
     transition: .4s;
     margin-bottom: 0.6rem;
+  }
+  h3, p {
+    width: 100%;
   }
 
   &:hover {

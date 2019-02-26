@@ -249,12 +249,18 @@ textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover
 textarea:-webkit-autofill:focus,
 {
-  border-color: $color-primary;
-  -webkit-text-fill-color: $color-primary-dark;
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  border-color: $ca-yellow;
+  -webkit-text-fill-color: $ca-magenta;
+  -webkit-box-shadow: 0 0 0px 1000px $color-primary-dark inset;
   // transition: background-color 5000s ease-in-out 0s;
 }
 
 .grecaptcha-badge {
   display: none;
+}
+
+
+.map {
+  margin: calc(4rem + 5vw) 0;
+  height: calc(350px + 10vw);
 }

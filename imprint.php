@@ -1,16 +1,9 @@
 <?php
-$page = [
-  'nav' => 'Datenschutz',
-  'pre-title' => '<span class="loc-impressum"></span>',
-  'title' => 'Impressum',
-  'hero-img' => [
-    'assets/imgs/goldcard2.jpg',
-    'assets/imgs/bg-location.jpg',
-  ]
-];
+$activePage = 'imprint.php';
+$headerWhite = true;
 include '_header.php';
 ?>
-<section class="white mp">
+<section class="mp">
   <div class="container-middle-big policies">
     <h2 class="uppercase trenner-tertiary">
       Impressum CW-Gebäudereinigung GmbH
@@ -35,11 +28,11 @@ include '_header.php';
     <h5>Rechtsform</h5>
     <p class="loc-rechtsform">
       Gesellschaft mit beschränkter Haftung (GmbH)<br>
-      <b>Kammerzugehörigkeit:</b> 	Denkmal-, Fassaden- und Gebäudereinigung
-      <b>Firmenbuch-Nr.:</b> 163089 (Landesgericht für Zivilstrafsachen Graz)
-      <b>UID-Nr.:</b> ATU 43628008
-      <b>DVR:</b> 0934364
-      <b>Unternehmens­gegenstand:</b>	Denkmal-, Fassaden- und Gebäudereinigung
+      <b>Kammerzugehörigkeit:</b> 	Denkmal-, Fassaden- und Gebäudereinigung<br>
+      <b>Firmenbuch-Nr.:</b> 163089 (Landesgericht für Zivilstrafsachen Graz)<br>
+      <b>UID-Nr.:</b> ATU 43628008<br>
+      <b>DVR:</b> 0934364<br>
+      <b>Unternehmens­gegenstand:</b>	Denkmal-, Fassaden- und Gebäudereinigung<br>
       <b>Grundlegende Linie der Website:</b>	Allgemeine Information über die Gebäudereinigungstätigkeiten bei vollem Gewerbe
       <br><br>
     </p>

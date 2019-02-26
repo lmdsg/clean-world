@@ -25,11 +25,10 @@ $pages["services.php"] = [
 
 $pages["about-us.php"] = [
   "nav" => "Unser Team",
-  "pre-title" => '',
-  'title' => '',
-  'hero-img' => [
-    'assets/imgs/aussen-reinigung.jpg',
-  ],
+  'title' => 'Unser Team',
+  "text" => 'Unser Ziel ist Ihre Zufriedenheit nach unserer Reinigung.',
+  'hero-graphic' => 'general-cleaning.svg',
+  'hero-gradient' => 'bg-gradient-2',
 ];
 
 $pages["contact.php"] = [
@@ -42,22 +41,17 @@ $pages["contact.php"] = [
 
 $pages["imprint.php"] = [
   "nav" => "Impressum",
-  'pre-title'=>'',
   "title" => "Impressum",
   'text' => '',
-  'hero-img' => [
-    'assets/images/datenschutz.jpg',
-    'assets/images/bg_sw.jpg'
-  ],
+  'hero-graphic' => 'eco.svg',
+  'hero-gradient' => 'bg-gradient-2'
 ];
 $pages["privacy-policy.php"] = [
   "nav" => "Datenschutz",
-  'pre-title'=>'',
   "title" => "Datenschutz",
-  'text' => '',
-  'hero-img' => [
-    'assets/images/datenschutz.jpg',
-    'assets/images/bg_sw.jpg'
-  ],
+  'text' => 'ERKLÄRUNG ZUR INFORMATIONSPFLICHT',
+  'hero-graphic' => 'eco.svg',
+  'hero-gradient' => 'bg-gradient-2'
 ];
+
 ?>

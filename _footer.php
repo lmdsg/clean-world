@@ -55,7 +55,7 @@
 <?php endif; ?>
 
 <?php if(isset($map)): ?>
-<script type="text/javascript" src="js/google-map.js"></script>
+<script type="text/javascript" src="js/src/google-map.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAiY-rhN3OotImGZxVniwegnAI2LQEUaY&callback=initMap"
   type="text/javascript">
 </script>

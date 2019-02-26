@@ -1,3 +1,4 @@
+import '@babel/polyfill';
 import {
   onDomLoad, isIE, isMobile,
   removeClass, toggleClass, addClass
@@ -49,6 +50,7 @@ function addBodyClasses(timeout) {
 
 
 onDomLoad(function () {
+  let body = document.body;
   checkCookie();
   if(isIE()) {
     addClass(body, 'is-ie');
