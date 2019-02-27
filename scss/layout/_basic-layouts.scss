@@ -113,7 +113,9 @@
   height: 100%;
 }
 .fh-v {
-  height: 100vh;
+  @include respond-to($medium-large) {
+    height: 100vh;
+  };
 }
 
 .bg-img-center  {

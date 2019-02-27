@@ -13,11 +13,17 @@ include '_header.php';
 ?>
 <section class="bg-red">
   <div class="container-middle">
-    <h2 class="align-center h-lg h-decor" style="margin: 60px 0 20px; ">Bewerbung</h2>
-    <p class="align-center">
-      Wir sind laufend auf der Suche nach neuen Mitarbeitern/innen und freuen uns auf Ihre Bewerbung per Post, per Email oder direkt hier online auf unserer Webseite!
-    </p>
-    <h5 class="align-center uppercase regular">Bewerben Sie sich jetzt!</h5>
+    <div class="icon-heading align-center row justify-center">
+      <div class="lead ca-magenta" style="font-size: 1.2rem">
+        Bewerben Sie sich jetzt!
+      </div>
+      <h2 class="uppercase trenner-bottom fw">
+        <span>Jobbörse</span>
+      </h2>
+      <p class="col-md-8">
+        Wir sind laufend auf der Suche nach neuen Mitarbeitern/innen und freuen uns auf Ihre Bewerbung per Post, per Email oder direkt hier online auf unserer Webseite!
+      </p>
+    </div>
   </div>
 </section>
 <section>

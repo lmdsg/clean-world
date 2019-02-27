@@ -1,5 +1,3 @@
-<?php include 'data/services.php'; ?>
-
 <section class="p-big">
   <div class="circle-pattern-2 bg-img-contain <?php echo isset($noServHeading) ? 'end-circle-el' : ''; ?>"></div>
 

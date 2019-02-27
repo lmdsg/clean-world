@@ -49,8 +49,8 @@ h6, .h6 {
 
 a {
   @include transition();
-  color: $color-accent;
-
+  display: inline-block;
+  color: $font-color-primary;
   &:active {
     color: none;
   }

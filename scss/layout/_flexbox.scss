@@ -105,8 +105,8 @@
     @include prefixW(align-content, center);
   }
 }
-.justify-start-ms {
-  @include respond-to($medium-small) {
+.justify-start-lg {
+  @include respond-to($large) {
     @include prefix(justify-content, flex-start);
   }
 }

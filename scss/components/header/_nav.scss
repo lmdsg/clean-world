@@ -2,6 +2,12 @@
 
 $delays: 0.06s 0.1s 0.14s 0.18s 0.22s 0.26s;
 
+.nav__container {
+  @include respond-to('(max-width: 1200px)') {
+    height: 80px;
+  };
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -35,6 +41,7 @@ nav {
     overflow-y: auto;
 
     ul {
+      padding: 0 2rem;
       padding-bottom: 100px;
     }
 
@@ -43,18 +50,19 @@ nav {
       padding: 0 20px;
       width: 100%;
       transition: 0.65s cubic-bezier(0.4, 0, 0.2, 1);
-      @include translateX(-120%);
+      @include translateY(13px);
 
       a {
-        text-align: left;
-        font-size: 0.74rem;
+        text-align: center;
         width: 100%;
         padding: .9rem;
         font-weight: 700;
         text-transform: uppercase;
         font-family: $font-secondary;
         transition: 0.35s ease;
-        margin: 12px 12px 0;
+        margin: 12px 0 0;
+        font-size: 1.2rem;
+        color: #222;
 
         span {
           display: inline-block;
@@ -76,6 +84,7 @@ nav {
         &.active, &:hover {
           transition: 0.3s ease 0.25s;
           color: $ca-yellow;
+          background-color: $color-primary;
           span:before {
             transform: translateX(101%);
           }
@@ -86,17 +95,6 @@ nav {
         position: relative;
         min-width: 100%;
         padding: 0;
-        padding-left: 1.8rem;
-
-        &:before {
-          content: "";
-          position: absolute;
-          left: 14px;
-          top: 0;
-          width: 2px;
-          height: 100%;
-          background-color: $color-tertiary-dark;
-        }
 
         a {
           width: 100%;
@@ -104,11 +102,9 @@ nav {
           transition: 0.4s ease;
           padding: 0.9rem 0.5rem;
           padding-left: 1rem;
-          background-color: #222;
-          border-bottom: 2px solid $color-primary;
-          // background-color: $color-tertiary-dark
-
-
+          font-weight: 400;
+          font-size: 0.8rem;
+          color: $font-color-primary-light;
           &:hover, &.active {
             background-color: $color-primary;
           }
@@ -118,7 +114,7 @@ nav {
   }
 
   &.open {
-    background-color: $color-primary;
+    background: $color-primary-dark;
     transition: 0.3s ease 0.2s;
     visibility: visible;
     opacity: 1;
@@ -167,6 +163,12 @@ nav {
           text-align: center;
           margin: 0;
           margin: 0;
+          font-size: 0.8rem;
+          color: $font-color-primary-light;
+          background-color: transparent;
+          &:hover, &.active {
+            background-color: transparent;
+          }
         }
 
         .sub-menu {

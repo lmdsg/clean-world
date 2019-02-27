@@ -1,5 +1,5 @@
 <?php
-include '_services.php';
+// include 'services.php';
 $pages = array();
 $pages["index.php"] = [
   "nav" => "Home",

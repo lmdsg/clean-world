@@ -64,7 +64,7 @@ $gallery = [
     <div class="btn-border" data-group="alround service">Alround Service</div>
     <div class="btn-border" data-group="glasreinigung">Glasreinigung</div>
   </div>
-  <div class="gallery">
+  <div class="gallery container-big" style="max-width: 1400px; margin-bottom:60px;">
     <?php
     $counter =1;
     foreach ($gallery as $key => $item):

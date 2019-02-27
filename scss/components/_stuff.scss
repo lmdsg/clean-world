@@ -78,10 +78,15 @@
       display: none;
     };
   }
-  &-r {
+  &.end-circle-lg {
+    @include respond-to('(max-width: 1200px)') {
+      display: none;
+    };
+  }
+  &-top {
     @extend .circle-pattern-2;
-    left: auto;
-    right: 5%;
+    bottom: auto;
+
   }
 }
 

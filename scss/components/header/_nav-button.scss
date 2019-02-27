@@ -21,7 +21,7 @@
     height: 2px;
     background-color: $ca-yellow;
     margin-bottom: 8px;
-    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.25s, background-color 0.3s ease;
   }
   &__line:nth-child(2) {
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
@@ -54,9 +54,7 @@
 
 header.fixed {
   .nav-button__line {
-    background-color: $color-primary;
+    background-color: $ca-magenta;
   }
-  &.open .nav-button__line {
-    background-color: #fff;
-  }
+
 }

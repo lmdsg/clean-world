@@ -18,8 +18,8 @@
             <i class="fa fa-phone"></i>
           </div>
           <h5>Telefon</h5>
-          <p>+43 664 145 11 15</p>
-          <p>+43 664 145 11 15</p>
+          <a class="fw" href="tel:+43316812464">+43 316 81 24 64</a>
+          <a class="fw" href="tel:+436641451115">+43 664 145 11 15</a>
         </div>
       </div>
       <div class="col-md-6 col-ml-4 row flex-align-stretch">
@@ -33,7 +33,7 @@
       </div>
     </div>
   </div>
-  <p class="col-md-12 white copyright row justify-center">
+  <p class="col-md-12 white copyright row justify-center align-center">
     © CW-Gebäudereinigung GmbH
     <script>
       document.querySelector('.copyright').innerHTML += new Date().getFullYear();
