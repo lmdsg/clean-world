@@ -1,17 +1,28 @@
-<svg preserveAspectRatio="xMinyMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716.34 813.75">
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 716.38 795.64">
   <defs>
     <style>
-      .cls-1 {
-        fill: url(#Unbenannter_Verlauf_6);
+      .cntctbg-1 {
+        fill: #fff;
+      }
+
+      .cntctbg-2 {
+        opacity: 0.8;
+      }
+
+      .cntctbg-3 {
+        fill: url(#cntctbg-gradient);
       }
     </style>
-    <linearGradient id="Unbenannter_Verlauf_6" data-name="Unbenannter Verlauf 6" x1="50.18" y1="24.93" x2="535.22" y2="602.98" gradientUnits="userSpaceOnUse">
+    <linearGradient id="cntctbg-gradient" data-name="Unbenannter Verlauf" x1="50.17" y1="52.9" x2="535.26" y2="631.01" gradientTransform="translate(0 -28)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#e10ca6"/>
       <stop offset="1" stop-color="#1d144e"/>
     </linearGradient>
   </defs>
-  <title>contact</title>
-  <g id="Illustration">
-    <path class="cls-1" d="M686.32,277.12C766.88,154.83,677.22-16.08,513.81,67S387.52,27.31,227.56,19,0,67,0,67V645.3S78.28,813.83,235.27,813.83s47.63-159.52,224.9-185.14S584.06,432.37,686.32,277.12Z"/>
+  <title>contact-bg</title>
+  <g>
+    <path class="cntctbg-1" d="M513.8,67C350.4,150.1,387.5,27.3,227.5,19S0,67,0,67V645.3S78.3,813.8,235.3,813.8s47.6-159.5,224.9-185.1S584.1,432.4,686.4,277.1C766.9,154.8,677.2-16.1,513.8,67Z" transform="translate(0 -18.16)"/>
+    <g id="Illustration" class="cntctbg-2">
+      <path class="cntctbg-3" d="M686.3,277.1C766.9,154.8,677.2-16.1,513.8,67S387.5,27.3,227.6,19,0,67,0,67V645.3S78.3,813.8,235.3,813.8s47.6-159.5,224.9-185.1S584.1,432.4,686.3,277.1Z" transform="translate(0 -18.16)"/>
+    </g>
   </g>
 </svg>
